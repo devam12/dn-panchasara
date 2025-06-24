@@ -77,11 +77,23 @@ export default function Hero() {
           
           <div className="lg:col-span-2 relative order-1 lg:order-2">
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
-                alt="CA office with accounting documents and financial reports" 
-                className="rounded-2xl shadow-xl w-full h-auto max-w-sm mx-auto lg:max-w-full"
-              />
+              <div className="bg-white p-8 rounded-2xl shadow-xl">
+                <div className="text-center space-y-6">
+                  <div className="mx-auto w-48 h-48 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center">
+                    <div className="text-white text-center">
+                      <div className="text-6xl font-black mb-2">ICAI</div>
+                      <div className="text-sm font-semibold">Institute of<br/>Chartered Accountants<br/>of India</div>
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Certified CA Professional</h3>
+                    <p className="text-gray-600">Registered with ICAI</p>
+                    <div className="mt-4 inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold">
+                      ✓ ICAI Verified Member
+                    </div>
+                  </div>
+                </div>
+              </div>
               
               {/* CA Badge Overlay */}
               <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 sm:px-4 py-2 rounded-lg font-bold shadow-lg text-sm">
