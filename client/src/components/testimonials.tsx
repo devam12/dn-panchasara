@@ -4,22 +4,22 @@ import { Star } from "lucide-react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Rajesh Shah",
-      position: "CEO, Tech Solutions Ltd.",
-      initials: "RS",
-      content: "Excellent service and professional expertise. D N Panchasara helped streamline our accounting processes and provided valuable tax planning advice."
+      name: "Anshul Shah",
+      position: "Ducon Consultants Pvt Ltd",
+      initials: "AS",
+      content: "Excellent service and professional expertise. D N Panchasra & Co. helped streamline our accounting processes and provided valuable tax planning advice."
     },
     {
-      name: "Meera Patel",
-      position: "Director, Patel Industries",
-      initials: "MP",
+      name: "Durgesh Agarwal",
+      position: "Durgesh Infrastructure Pvt Ltd",
+      initials: "DA",
       content: "Professional, reliable, and always available for consultation. Their financial advisory services have been invaluable for our business growth."
     },
     {
-      name: "Amit Sharma",
-      position: "Founder, Startup Innovations",
-      initials: "AS",
-      content: "Highly knowledgeable and trustworthy. They handled our company registration and ongoing compliance requirements with complete professionalism."
+      name: "Dhruvin Gajjar",
+      position: "J K Product",
+      initials: "DG",
+      content: "Highly knowledgeable and trustworthy. They handled our GST compliance and ongoing requirements with complete professionalism."
     }
   ];
 
