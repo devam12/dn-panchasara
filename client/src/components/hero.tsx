@@ -77,11 +77,6 @@ export default function Hero() {
           
           <div className="lg:col-span-2 relative order-1 lg:order-2">
             <div className="relative">
-              {/* CA Badge - Top Left */}
-              <div className="absolute -top-4 -left-4 z-10 bg-gradient-to-r from-yellow-500 to-orange-600 text-white px-6 py-3 rounded-xl font-black shadow-2xl transform rotate-[-5deg] animate-pulse">
-                CA QUALIFIED
-              </div>
-              
               <div className="bg-white p-8 rounded-2xl shadow-xl">
                 <div className="text-center space-y-6">
                   <div className="mx-auto w-48 h-48 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center">
@@ -100,9 +95,9 @@ export default function Hero() {
                 </div>
               </div>
               
-              {/* Additional Badge - Bottom Right */}
-              <div className="absolute -bottom-4 -right-4 z-10 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-lg font-bold shadow-xl text-sm">
-                ✓ CERTIFIED
+              {/* CA Certified Badge - Bottom Right */}
+              <div className="absolute -bottom-4 -right-4 z-10 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-5 py-3 rounded-lg font-bold shadow-xl text-sm">
+                CA CERTIFIED
               </div>
             </div>
           </div>
