@@ -24,13 +24,40 @@ export default function Contact() {
 
   const contactMutation = useMutation({
     mutationFn: async (data: typeof formData) => {
-      const response = await apiRequest("POST", "/api/contact", data);
-      return response.json();
+      // Send to Formspree
+      const formspreeResponse = await fetch("https://formspree.io/f/cadarshanpanchasara@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: `${data.firstName} ${data.lastName}`,
+          email: data.email,
+          phone: data.phone,
+          service: data.service,
+          message: data.message,
+          _replyto: data.email,
+          _subject: `New Contact: ${data.firstName} ${data.lastName} - ${data.service || 'General Inquiry'}`
+        }),
+      });
+
+      if (!formspreeResponse.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      // Also save to our database
+      try {
+        await apiRequest("POST", "/api/contact", data);
+      } catch (error) {
+        console.log("Database save failed, but email sent successfully");
+      }
+
+      return { success: true };
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       toast({
         title: "Message Sent!",
-        description: data.message,
+        description: "Thank you for your message! We have received your inquiry and will get back to you soon.",
       });
       setFormData({
         firstName: "",
