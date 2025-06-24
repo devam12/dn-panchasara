@@ -101,8 +101,8 @@ D N PANCHASRA & CO. - Professional Chartered Accountant Services
   `;
 
   const emailData = {
-    to: 'cadarshanpanchasara@gmail.com',
-    from: 'noreply@dnpanchasra.com', // This should be a verified sender in SendGrid
+    to: 'cadarshanpanchasra@gmail.com',
+    from: 'cadarshanpanchasara@gmail.com', // Use your verified email as sender
     subject: `New Contact Form Submission from ${firstName} ${lastName}`,
     text: textContent,
     html: htmlContent,
