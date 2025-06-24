@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
             
             <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-tight text-gray-700">
-              Professional Financial Services You Can Trust
+              Professional Financial Services<br />You Can Trust
             </h2>
             
             <p className="text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
@@ -78,8 +78,8 @@ export default function Hero() {
           <div className="lg:col-span-2 relative order-1 lg:order-2">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Professional accountant working on financial documents" 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                alt="Professional Chartered Accountant in formal business attire" 
                 className="rounded-2xl shadow-xl w-full h-auto max-w-sm mx-auto lg:max-w-full"
               />
               
