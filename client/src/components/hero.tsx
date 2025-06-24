@@ -16,13 +16,13 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="pt-20 bg-gradient-to-br from-blue-50 to-white text-gray-900 relative min-h-screen flex items-center">
+    <section id="home" className="pt-16 sm:pt-20 bg-gradient-to-br from-blue-50 to-white text-gray-900 relative min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          <div className="space-y-6 lg:space-y-8 text-center lg:text-left order-2 lg:order-1">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8 items-center">
+          <div className="lg:col-span-3 space-y-6 lg:space-y-8 text-center lg:text-left order-2 lg:order-1">
             {/* Firm Name */}
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 leading-tight whitespace-nowrap">
+              <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 leading-tight">
                 D N PANCHASARA
               </h1>
               <div className="h-1 w-48 sm:w-56 md:w-64 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full mx-auto lg:mx-0"></div>
@@ -75,12 +75,12 @@ export default function Hero() {
             </div>
           </div>
           
-          <div className="relative order-1 lg:order-2">
+          <div className="lg:col-span-2 relative order-1 lg:order-2">
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
                 alt="Professional accountant working on financial documents" 
-                className="rounded-2xl shadow-xl w-full h-auto max-w-md mx-auto lg:max-w-full"
+                className="rounded-2xl shadow-xl w-full h-auto max-w-sm mx-auto lg:max-w-full"
               />
               
               {/* CA Badge Overlay */}
