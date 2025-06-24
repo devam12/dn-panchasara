@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left order-2 lg:order-1">
             {/* Firm Name */}
             <div className="space-y-4">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 leading-tight break-words">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 leading-tight whitespace-nowrap">
                 D N PANCHASARA
               </h1>
               <div className="h-1 w-48 sm:w-56 md:w-64 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full mx-auto lg:mx-0"></div>
