@@ -122,7 +122,7 @@ export default function Contact() {
                     <div className="flex items-center justify-between">
                       <h4 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h4>
                       {info.title !== "Business Hours" && (
-                        <div className="flex items-center space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="flex items-center space-x-2">
                           <button
                             onClick={() => handleCopy(info.content.replace(/\n/g, ', '), info.title)}
                             className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
