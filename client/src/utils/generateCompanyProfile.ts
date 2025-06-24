@@ -11,7 +11,6 @@ export function generateCompanyProfile() {
       "Financial Statement Preparation",
       "Business Advisory Services", 
       "Audit & Assurance",
-      "Company Registration",
       "GST Registration & Filing",
       "Income Tax Returns",
       "Corporate Restructuring"

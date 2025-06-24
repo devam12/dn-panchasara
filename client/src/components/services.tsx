@@ -37,14 +37,14 @@ export default function Services() {
       ]
     },
     {
-      icon: Building,
-      title: "Company Registration",
-      description: "Complete business setup services including company registration and statutory compliance.",
+      icon: FileText,
+      title: "GST Filing",
+      description: "Complete GST compliance services including registration, filing, and ongoing support.",
       features: [
-        "Company Formation",
-        "Licensing Support",
-        "Statutory Compliance",
-        "Documentation"
+        "GST Registration",
+        "Monthly GST Returns",
+        "GST Compliance",
+        "Input Tax Credit Management"
       ]
     },
     {
