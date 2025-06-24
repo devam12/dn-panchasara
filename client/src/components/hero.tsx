@@ -20,18 +20,13 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 text-center lg:text-left">
-            {/* CA Qualification Highlight */}
-            <div className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold text-lg shadow-lg">
-              CA QUALIFIED PROFESSIONAL
-            </div>
-            
             {/* Firm Name */}
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-black text-gray-900">
-                <span className="text-blue-600">D N</span> PANCHASARA
+              <h1 className="text-6xl lg:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 leading-tight">
+                D N PANCHASARA
               </h1>
-              <div className="h-1 w-48 bg-blue-600 rounded-full mx-auto lg:mx-0"></div>
-              <p className="text-xl font-semibold text-blue-600">
+              <div className="h-1 w-64 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full mx-auto lg:mx-0"></div>
+              <p className="text-xl lg:text-2xl font-bold text-blue-600 tracking-wide">
                 CHARTERED ACCOUNTANT
               </p>
             </div>
