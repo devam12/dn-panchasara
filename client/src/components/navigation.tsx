@@ -44,17 +44,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <div className="flex items-center space-x-4">
-                {/* CA Badge */}
-                <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-sm">
-                  CA QUALIFIED
-                </div>
-                <div>
-                  <h1 className="text-3xl font-black text-gray-900">
-                    D N PANCHASARA
-                  </h1>
-                  <p className="text-blue-600 font-semibold text-sm">Chartered Accountant</p>
-                </div>
+              <div>
+                <h1 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
+                  D N PANCHASARA
+                </h1>
+                <p className="text-blue-600 font-bold text-sm tracking-wide">CHARTERED ACCOUNTANT</p>
               </div>
             </div>
           </div>
