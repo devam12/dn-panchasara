@@ -28,8 +28,8 @@ export default function About() {
           <div className="relative group">
             <div className="absolute -inset-1 bg-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional CA working in modern office" 
+              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+              alt="Professional businessman in modern office environment" 
               className="relative rounded-2xl shadow-2xl w-full h-auto"
             />
           </div>

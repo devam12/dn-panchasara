@@ -78,8 +78,8 @@ export default function Hero() {
           <div className="lg:col-span-2 relative order-1 lg:order-2">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Professional Chartered Accountant in formal business attire" 
+                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=600" 
+                alt="CA office with accounting documents and financial reports" 
                 className="rounded-2xl shadow-xl w-full h-auto max-w-sm mx-auto lg:max-w-full"
               />
               
