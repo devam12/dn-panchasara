@@ -5,10 +5,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Copy, ExternalLink } from "lucide-react";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
+import { contactData, copyToClipboard, openPhone, openEmail, openMap } from "../utils/contactActions";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -48,6 +49,15 @@ export default function Contact() {
       });
     },
   });
+
+  const handleCopy = async (text: string, type: string) => {
+    const result = await copyToClipboard(text, type);
+    toast({
+      title: result.success ? "Copied!" : "Error",
+      description: result.message,
+      variant: result.success ? "default" : "destructive",
+    });
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -102,14 +112,52 @@ export default function Contact() {
             
             <div className="space-y-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start">
+                <div key={index} className="flex items-start group">
                   <div className="flex-shrink-0">
                     <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg">
                       <info.icon className="h-6 w-6 text-white" />
                     </div>
                   </div>
-                  <div className="ml-4">
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h4>
+                  <div className="ml-4 flex-1">
+                    <div className="flex items-center justify-between">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h4>
+                      <div className="flex items-center space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <button
+                          onClick={() => handleCopy(info.content.replace(/\n/g, ', '), info.title)}
+                          className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
+                          title={`Copy ${info.title}`}
+                        >
+                          <Copy className="h-4 w-4" />
+                        </button>
+                        {info.title === "Phone Number" && (
+                          <button
+                            onClick={() => openPhone(info.content)}
+                            className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
+                            title="Call"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </button>
+                        )}
+                        {info.title === "Email Address" && (
+                          <button
+                            onClick={() => openEmail(info.content)}
+                            className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
+                            title="Send email"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </button>
+                        )}
+                        {info.title === "Office Address" && (
+                          <button
+                            onClick={() => openMap(info.content)}
+                            className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
+                            title="Open in maps"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </button>
+                        )}
+                      </div>
+                    </div>
                     <p className="text-gray-600 whitespace-pre-line leading-relaxed">{info.content}</p>
                   </div>
                 </div>
