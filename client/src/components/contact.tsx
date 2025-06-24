@@ -62,7 +62,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Office Address",
-      content: "123 Business District,\nFinancial Plaza, Suite 456\nCity, State 123456"
+      content: "C-301 LD Alexa, NR. Ananta Abode,\nOPP. Ganesh Genesis, Gota-Jagatpur Road,\nJagatpur, Ahmedabad, Gujarat, 382470"
     },
     {
       icon: Phone,
@@ -92,7 +92,7 @@ export default function Contact() {
             <div className="h-1 w-full bg-blue-600 rounded-full"></div>
           </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ready to take your finances to the next level? Let's discuss how <span className="font-bold text-blue-600">D N PANCHASARA</span> can help you achieve your goals.
+            Ready to take your finances to the next level? Let's discuss how <span className="font-bold text-blue-600">D N PANCHASRA & CO.</span> can help you achieve your goals.
           </p>
         </div>
         

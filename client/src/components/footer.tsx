@@ -95,7 +95,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 <span className="font-bold text-white">D N Panchasara</span>. All rights reserved. | Professional Chartered Accountant Services
+            © 2024 <span className="font-bold text-white">D N Panchasra & Co.</span> All rights reserved. | Professional Chartered Accountant Services
           </p>
         </div>
       </div>
