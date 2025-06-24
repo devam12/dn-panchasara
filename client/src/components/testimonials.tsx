@@ -24,14 +24,14 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <section id="testimonials" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block mb-6">
-            <h2 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-primary-custom mb-2">
-              What Our Clients Say
+            <h2 className="text-5xl font-black text-gray-900 mb-2">
+              What Our <span className="text-blue-600">Clients Say</span>
             </h2>
-            <div className="h-1 w-full bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
+            <div className="h-1 w-full bg-blue-600 rounded-full"></div>
           </div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Trusted by businesses and individuals for professional financial services
@@ -51,7 +51,7 @@ export default function Testimonials() {
                 </div>
                 <p className="text-gray-600 mb-6 italic">"{testimonial.content}"</p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-primary-custom rounded-full flex items-center justify-center text-white font-bold">
+                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.initials}
                   </div>
                   <div className="ml-4">

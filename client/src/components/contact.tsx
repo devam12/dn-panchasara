@@ -82,43 +82,43 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-slate-800 to-slate-900 text-white">
+    <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block mb-6">
-            <h2 className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-2">
-              Get In Touch
+            <h2 className="text-5xl font-black text-gray-900 mb-2">
+              Get In <span className="text-blue-600">Touch</span>
             </h2>
-            <div className="h-1 w-full bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
+            <div className="h-1 w-full bg-blue-600 rounded-full"></div>
           </div>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Ready to take your finances to the next level? Let's discuss how <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">D N PANCHASARA</span> can help you achieve your goals.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Ready to take your finances to the next level? Let's discuss how <span className="font-bold text-blue-600">D N PANCHASARA</span> can help you achieve your goals.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <div>
-            <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 mb-8">Contact Information</h3>
+          <div className="bg-white rounded-2xl p-8 shadow-xl">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8">Contact <span className="text-blue-600">Information</span></h3>
             
-            <div className="space-y-6">
+            <div className="space-y-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start group">
+                <div key={index} className="flex items-start">
                   <div className="flex-shrink-0">
-                    <div className="w-14 h-14 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center shadow-lg">
                       <info.icon className="h-6 w-6 text-white" />
                     </div>
                   </div>
-                  <div className="ml-6">
-                    <h4 className="text-xl font-semibold text-white mb-2">{info.title}</h4>
-                    <p className="text-gray-300 whitespace-pre-line leading-relaxed">{info.content}</p>
+                  <div className="ml-4">
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h4>
+                    <p className="text-gray-600 whitespace-pre-line leading-relaxed">{info.content}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
           
-          <div className="bg-white rounded-2xl p-8 shadow-2xl">
-            <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-primary-custom mb-8">Send us a Message</h3>
+          <div className="bg-white rounded-2xl p-8 shadow-xl">
+            <h3 className="text-3xl font-bold text-gray-900 mb-8">Send us a <span className="text-blue-600">Message</span></h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -133,7 +133,7 @@ export default function Contact() {
                     onChange={(e) => handleInputChange("firstName", e.target.value)}
                     placeholder="Enter your first name"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-custom focus:border-transparent transition duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition duration-300"
                   />
                 </div>
                 <div>
@@ -147,7 +147,7 @@ export default function Contact() {
                     onChange={(e) => handleInputChange("lastName", e.target.value)}
                     placeholder="Enter your last name"
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-custom focus:border-transparent transition duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition duration-300"
                   />
                 </div>
               </div>
@@ -163,7 +163,7 @@ export default function Contact() {
                   onChange={(e) => handleInputChange("email", e.target.value)}
                   placeholder="Enter your email address"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-custom focus:border-transparent transition duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition duration-300"
                 />
               </div>
               
@@ -177,7 +177,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={(e) => handleInputChange("phone", e.target.value)}
                   placeholder="Enter your phone number"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-custom focus:border-transparent transition duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition duration-300"
                 />
               </div>
               
@@ -186,7 +186,7 @@ export default function Contact() {
                   Service Required
                 </Label>
                 <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
-                  <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-custom focus:border-transparent transition duration-300">
+                  <SelectTrigger className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition duration-300">
                     <SelectValue placeholder="Select a service" />
                   </SelectTrigger>
                   <SelectContent>
@@ -210,14 +210,14 @@ export default function Contact() {
                   onChange={(e) => handleInputChange("message", e.target.value)}
                   rows={4}
                   placeholder="Tell us about your requirements..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-custom focus:border-transparent transition duration-300"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-blue-600 transition duration-300"
                 />
               </div>
               
               <Button
                 type="submit"
                 disabled={contactMutation.isPending}
-                className="w-full bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-yellow-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition duration-300 shadow-2xl transform hover:scale-105"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg"
               >
                 {contactMutation.isPending ? "Sending..." : "Send Message"}
               </Button>
