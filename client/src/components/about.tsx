@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Download } from "lucide-react";
+import { generateCompanyProfile } from "../utils/generateCompanyProfile";
 
 export default function About() {
   const qualifications = [
@@ -54,7 +55,11 @@ export default function About() {
               ))}
             </div>
             
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition duration-300">
+            <Button 
+              onClick={generateCompanyProfile}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition duration-300 flex items-center gap-2"
+            >
+              <Download className="h-5 w-5" />
               Download Company Profile
             </Button>
           </div>
