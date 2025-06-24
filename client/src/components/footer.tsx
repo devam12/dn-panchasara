@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-3xl font-black text-white mb-2">
-              D N PANCHASARA
+              D N PANCHASRA & CO.
             </h3>
             <div className="bg-blue-600 text-white px-3 py-1 rounded-lg font-bold text-sm inline-block mb-4">
               CA QUALIFIED

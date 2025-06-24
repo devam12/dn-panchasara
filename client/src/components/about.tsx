@@ -15,7 +15,7 @@ export default function About() {
         <div className="text-center mb-16">
           <div className="inline-block mb-6">
             <h2 className="text-5xl font-black text-gray-900 mb-2">
-              About <span className="text-blue-600">D N PANCHASARA</span>
+              About <span className="text-blue-600">D N PANCHASRA & CO.</span>
             </h2>
             <div className="h-1 w-full bg-blue-600 rounded-full"></div>
           </div>
@@ -36,7 +36,7 @@ export default function About() {
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-black text-gray-900 mb-2">
-                <span className="text-blue-600">D N</span> PANCHASARA
+                <span className="text-blue-600">D N</span> PANCHASRA & CO.
               </h3>
               <p className="text-lg font-semibold text-blue-600">Chartered Accountant & Financial Advisor</p>
             </div>

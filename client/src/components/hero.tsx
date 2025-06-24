@@ -23,7 +23,7 @@ export default function Hero() {
             {/* Firm Name */}
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 leading-tight">
-                D N PANCHASARA
+                D N PANCHASRA & CO.
               </h1>
               <div className="h-1 w-48 sm:w-56 md:w-64 bg-gradient-to-r from-blue-600 to-blue-800 rounded-full mx-auto lg:mx-0"></div>
               <p className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-600 tracking-wide">

@@ -106,7 +106,7 @@ This is a full-stack web application for a Chartered Accountant (D N Panchasara)
 
 ✓ Applied consistent blue primary color scheme throughout website
 ✓ Added smart header behavior (hide on scroll down, show on scroll up)  
-✓ Enhanced "D N PANCHASARA" branding with attractive blue gradient text
+✓ Enhanced "D N PANCHASRA & CO." branding with attractive blue gradient text
 ✓ Removed CA badge from header to focus on firm name
 ✓ Redesigned footer with professional dark theme and balanced colors
 ✓ Improved contact form styling with blue focus states
