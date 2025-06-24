@@ -121,42 +121,44 @@ export default function Contact() {
                   <div className="ml-4 flex-1">
                     <div className="flex items-center justify-between">
                       <h4 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h4>
-                      <div className="flex items-center space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <button
-                          onClick={() => handleCopy(info.content.replace(/\n/g, ', '), info.title)}
-                          className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
-                          title={`Copy ${info.title}`}
-                        >
-                          <Copy className="h-4 w-4" />
-                        </button>
-                        {info.title === "Phone Number" && (
+                      {info.title !== "Business Hours" && (
+                        <div className="flex items-center space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           <button
-                            onClick={() => openPhone(info.content)}
+                            onClick={() => handleCopy(info.content.replace(/\n/g, ', '), info.title)}
                             className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
-                            title="Call"
+                            title={`Copy ${info.title}`}
                           >
-                            <ExternalLink className="h-4 w-4" />
+                            <Copy className="h-4 w-4" />
                           </button>
-                        )}
-                        {info.title === "Email Address" && (
-                          <button
-                            onClick={() => openEmail(info.content)}
-                            className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
-                            title="Send email"
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </button>
-                        )}
-                        {info.title === "Office Address" && (
-                          <button
-                            onClick={() => openMap(info.content)}
-                            className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
-                            title="Open in maps"
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </button>
-                        )}
-                      </div>
+                          {info.title === "Phone Number" && (
+                            <button
+                              onClick={() => openPhone(info.content)}
+                              className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
+                              title="Call"
+                            >
+                              <ExternalLink className="h-4 w-4" />
+                            </button>
+                          )}
+                          {info.title === "Email Address" && (
+                            <button
+                              onClick={() => openEmail(info.content)}
+                              className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
+                              title="Send email"
+                            >
+                              <ExternalLink className="h-4 w-4" />
+                            </button>
+                          )}
+                          {info.title === "Office Address" && (
+                            <button
+                              onClick={() => openMap(info.content)}
+                              className="p-1 text-gray-400 hover:text-blue-600 transition duration-300"
+                              title="Open in maps"
+                            >
+                              <ExternalLink className="h-4 w-4" />
+                            </button>
+                          )}
+                        </div>
+                      )}
                     </div>
                     <p className="text-gray-600 whitespace-pre-line leading-relaxed">{info.content}</p>
                   </div>
