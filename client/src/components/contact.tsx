@@ -67,17 +67,17 @@ export default function Contact() {
     {
       icon: Phone,
       title: "Phone Number",
-      content: "+91 98765 43210"
+      content: "+91 9624913296"
     },
     {
       icon: Mail,
       title: "Email Address",
-      content: "info@dnpanchasara.com"
+      content: "cadarshanpanchasara@gmail.com"
     },
     {
       icon: Clock,
       title: "Business Hours",
-      content: "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 2:00 PM"
+      content: "Monday - Saturday: 10:00 AM - 7:00 PM\nSunday: Closed"
     }
   ];
 
@@ -193,9 +193,10 @@ export default function Contact() {
                     <SelectItem value="accounting">Accounting & Bookkeeping</SelectItem>
                     <SelectItem value="tax">Tax Planning & Filing</SelectItem>
                     <SelectItem value="advisory">Financial Advisory</SelectItem>
-                    <SelectItem value="registration">Company Registration</SelectItem>
+                    <SelectItem value="gst">GST Filing</SelectItem>
                     <SelectItem value="audit">Audit & Assurance</SelectItem>
                     <SelectItem value="consulting">Business Consulting</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

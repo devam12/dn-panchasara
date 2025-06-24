@@ -81,8 +81,8 @@ export function generateCompanyProfile() {
         <p><strong>Professional:</strong> Chartered Accountant</p>
         <p><strong>Registration:</strong> Institute of Chartered Accountants of India (ICAI)</p>
         <p><strong>Address:</strong> C-301 LD Alexa, NR. Ananta Abode, OPP. Ganesh Genesis, Gota-Jagatpur Road, Jagatpur, Ahmedabad, Gujarat, 382470</p>
-        <p><strong>Email:</strong> contact@dnpanchasra.com</p>
-        <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+        <p><strong>Email:</strong> cadarshanpanchasara@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9624913296</p>
       </div>
     </body>
     </html>
