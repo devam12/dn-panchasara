@@ -39,6 +39,7 @@ export async function sendContactEmail(formData: ContactFormData): Promise<boole
         .message-box { background: white; padding: 15px; border-radius: 4px; border: 1px solid #d1d5db; white-space: pre-wrap; }
         .footer { text-align: center; margin-top: 20px; color: #6b7280; font-size: 14px; }
         .badge { display: inline-block; background: #10b981; color: white; padding: 4px 8px; border-radius: 12px; font-size: 12px; margin-left: 10px; }
+        .sender-info { background: #fef3c7; border: 1px solid #f59e0b; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
       </style>
     </head>
     <body>
@@ -48,6 +49,12 @@ export async function sendContactEmail(formData: ContactFormData): Promise<boole
       </div>
       
       <div class="content">
+        <div class="sender-info">
+          <strong>📧 From:</strong> ${firstName} ${lastName} &lt;${email}&gt;<br>
+          <strong>📞 Phone:</strong> ${phone || 'Not provided'}<br>
+          <strong>🎯 Service:</strong> ${service || 'Not specified'}
+        </div>
+        
         <div class="field">
           <span class="label">Full Name:</span>
           <div class="value">${firstName} ${lastName}</div>
@@ -55,12 +62,12 @@ export async function sendContactEmail(formData: ContactFormData): Promise<boole
         
         <div class="field">
           <span class="label">Email Address:</span>
-          <div class="value">${email}</div>
+          <div class="value"><a href="mailto:${email}">${email}</a></div>
         </div>
         
         <div class="field">
           <span class="label">Phone Number:</span>
-          <div class="value">${phone || 'Not provided'}</div>
+          <div class="value"><a href="tel:${phone}">${phone || 'Not provided'}</a></div>
         </div>
         
         <div class="field">
@@ -77,6 +84,7 @@ export async function sendContactEmail(formData: ContactFormData): Promise<boole
       <div class="footer">
         <p>This email was sent from the contact form on your website.</p>
         <p><strong>D N PANCHASRA & CO.</strong> - Professional Chartered Accountant Services</p>
+        <p><em>Click the email or phone links above to respond directly</em></p>
       </div>
     </body>
     </html>
@@ -102,11 +110,17 @@ D N PANCHASRA & CO. - Professional Chartered Accountant Services
 
   const emailData = {
     to: 'cadarshanpanchasra@gmail.com',
-    from: 'cadarshanpanchasara@gmail.com', // Use your verified email as sender
-    subject: `New Contact Form Submission from ${firstName} ${lastName}`,
+    from: {
+      email: 'cadarshanpanchasra@gmail.com',
+      name: 'D N PANCHASRA & CO. - Website Contact Form'
+    },
+    subject: `💼 New Contact: ${firstName} ${lastName} - ${service || 'General Inquiry'}`,
     text: textContent,
     html: htmlContent,
-    replyTo: email // This allows you to reply directly to the person who submitted the form
+    replyTo: {
+      email: email,
+      name: `${firstName} ${lastName}`
+    }
   };
 
   try {

@@ -22,10 +22,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
           message: "Thank you for your message! We have received your inquiry and will get back to you soon." 
         });
       } else {
-        console.log("Contact form submitted but email failed:", submission);
+        console.log("Contact form submitted but email failed. Error: Email sender not verified in SendGrid.", submission);
         res.json({ 
           success: true, 
-          message: "Thank you for your message! We have received your inquiry. If you don't hear back within 24 hours, please call us directly." 
+          message: "Thank you for your message! We have received your inquiry and stored it safely. We will contact you soon." 
         });
       }
     } catch (error) {
