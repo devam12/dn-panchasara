@@ -46,7 +46,7 @@ export default function Navigation() {
             <div className="flex-shrink-0">
               <div>
                 <h1 className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800">
-                  D N PANCHASARA
+                  D N PANCHASRA & CO.
                 </h1>
                 <p className="text-blue-600 font-bold text-xs sm:text-sm tracking-wide">CHARTERED ACCOUNTANT</p>
               </div>
