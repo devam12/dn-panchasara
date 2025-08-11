@@ -1,0 +1,607 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D N Panchasara - Chartered Accountant & Financial Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1E40AF',
+                        'secondary': '#3B82F6',
+                        'accent': '#F59E0B',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-inter bg-gray-50">
+    
+    <!-- Navigation -->
+    <!-- @COMPONENT: Navigation [responsive navbar with mobile menu] -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">D N Panchasara</h1>
+                        <p class="text-sm text-gray-600">Chartered Accountant</p>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-900 hover:text-primary transition duration-300 font-medium">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-primary transition duration-300 font-medium">About</a>
+                        <a href="#services" class="text-gray-700 hover:text-primary transition duration-300 font-medium">Services</a>
+                        <a href="#testimonials" class="text-gray-700 hover:text-primary transition duration-300 font-medium">Testimonials</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary transition duration-300 font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-900 hover:text-primary transition duration-300">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary transition duration-300">About</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary transition duration-300">Services</a>
+                <a href="#testimonials" class="block px-3 py-2 text-gray-700 hover:text-primary transition duration-300">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- Hero Section -->
+    <!-- @COMPONENT: Hero [main banner with CTA] -->
+    <section id="home" class="pt-20 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Professional <span class="text-accent">Financial</span> Services You Can Trust
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100">
+                        Providing comprehensive accounting, taxation, and financial advisory services with certified expertise and personalized attention.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-accent hover:bg-yellow-500 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 shadow-lg">
+                            Get Free Consultation
+                        </button>
+                        <button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3 rounded-lg font-semibold transition duration-300">
+                            View Services
+                        </button>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <!-- Professional accountant working on financial documents -->
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Professional accountant working on financial documents" 
+                         class="rounded-xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero -->
+
+    <!-- About Section -->
+    <!-- @COMPONENT: About [professional profile and qualifications] -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About D N Panchasara</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Bringing years of expertise and dedication to provide exceptional financial services
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- Professional CA working in modern office -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Professional CA working in modern office" 
+                         class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Chartered Accountant & Financial Advisor</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        With a completed CA qualification and extensive experience in accounting, taxation, and financial advisory services, 
+                        I am committed to helping businesses and individuals achieve their financial goals through professional expertise and personalized service.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3 text-lg"></i>
+                            <span class="text-gray-700">Chartered Accountant (CA) Qualified</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3 text-lg"></i>
+                            <span class="text-gray-700">Registered Tax Practitioner</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3 text-lg"></i>
+                            <span class="text-gray-700">Financial Advisory Certification</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-primary mr-3 text-lg"></i>
+                            <span class="text-gray-700">Years of Industry Experience</span>
+                        </div>
+                    </div>
+                    
+                    <button class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                        Download Company Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About -->
+
+    <!-- Services Section -->
+    <!-- @COMPONENT: Services [grid of service offerings] -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive financial solutions tailored to meet your business and personal needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: services.map(service => ( -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-calculator text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Accounting & Bookkeeping</h3>
+                    <p class="text-gray-600 mb-4">
+                        Complete accounting solutions including bookkeeping, financial statements, and regulatory compliance.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Monthly Bookkeeping</li>
+                        <li>• Financial Statements</li>
+                        <li>• Regulatory Compliance</li>
+                        <li>• Account Reconciliation</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-file-invoice-dollar text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Tax Planning & Filing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Strategic tax planning and professional filing services to optimize your tax obligations.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Income Tax Returns</li>
+                        <li>• GST Registration & Filing</li>
+                        <li>• Tax Planning Strategy</li>
+                        <li>• Tax Optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Financial Advisory</h3>
+                    <p class="text-gray-600 mb-4">
+                        Expert financial guidance to help you make informed decisions and achieve your goals.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Investment Planning</li>
+                        <li>• Business Valuation</li>
+                        <li>• Financial Analysis</li>
+                        <li>• Risk Management</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-building text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Company Registration</h3>
+                    <p class="text-gray-600 mb-4">
+                        Complete business setup services including company registration and statutory compliance.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Company Formation</li>
+                        <li>• Licensing Support</li>
+                        <li>• Statutory Compliance</li>
+                        <li>• Documentation</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-search-dollar text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Audit & Assurance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Professional audit services to ensure accuracy and compliance with financial standards.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Statutory Audits</li>
+                        <li>• Internal Audits</li>
+                        <li>• Compliance Reviews</li>
+                        <li>• Risk Assessment</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-handshake text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Business Consulting</h3>
+                    <p class="text-gray-600 mb-4">
+                        Strategic business consulting to optimize operations and drive sustainable growth.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-2">
+                        <li>• Business Strategy</li>
+                        <li>• Process Optimization</li>
+                        <li>• Performance Analysis</li>
+                        <li>• Growth Planning</li>
+                    </ul>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services -->
+
+    <!-- Testimonials Section -->
+    <!-- @COMPONENT: Testimonials [client feedback carousel] -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Trusted by businesses and individuals for professional financial services
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: testimonials.map(testimonial => ( -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Excellent service and professional expertise. D N Panchasara helped streamline our accounting processes and provided valuable tax planning advice."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            RS
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold text-gray-900" data-mock="true">Rajesh Shah</p>
+                            <p class="text-sm text-gray-500" data-mock="true">CEO, Tech Solutions Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Professional, reliable, and always available for consultation. Their financial advisory services have been invaluable for our business growth."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            MP
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold text-gray-900" data-mock="true">Meera Patel</p>
+                            <p class="text-sm text-gray-500" data-mock="true">Director, Patel Industries</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic">
+                        "Highly knowledgeable and trustworthy. They handled our company registration and ongoing compliance requirements with complete professionalism."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            AS
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold text-gray-900" data-mock="true">Amit Sharma</p>
+                            <p class="text-sm text-gray-500" data-mock="true">Founder, Startup Innovations</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials -->
+
+    <!-- Contact Section -->
+    <!-- @COMPONENT: Contact [contact form and information] -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Ready to take your finances to the next level? Let's discuss how we can help you achieve your goals.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Office Address</h4>
+                                <p class="text-gray-600" data-mock="true">
+                                    123 Business District,<br>
+                                    Financial Plaza, Suite 456<br>
+                                    City, State 123456
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Phone Number</h4>
+                                <p class="text-gray-600" data-mock="true">+91 98765 43210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Email Address</h4>
+                                <p class="text-gray-600" data-mock="true">info@dnpanchasara.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-semibold text-gray-900">Business Hours</h4>
+                                <p class="text-gray-600">
+                                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                    Saturday: 10:00 AM - 2:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8">Send us a Message</h3>
+                    
+                    <form class="space-y-6" data-implementation="Should validate form before submission">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                <input type="text" id="firstName" name="firstName" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                                       placeholder="Enter your first name" required>
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" 
+                                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                                       placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                                   placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                                   placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Required</label>
+                            <select id="service" name="service" 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300">
+                                <option value="">Select a service</option>
+                                <option value="accounting">Accounting & Bookkeeping</option>
+                                <option value="tax">Tax Planning & Filing</option>
+                                <option value="advisory">Financial Advisory</option>
+                                <option value="registration">Company Registration</option>
+                                <option value="audit">Audit & Assurance</option>
+                                <option value="consulting">Business Consulting</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300"
+                                      placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-primary hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact -->
+
+    <!-- Footer -->
+    <!-- @COMPONENT: Footer [professional footer with credentials] -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">D N Panchasara</h3>
+                    <p class="text-gray-400 mb-4">
+                        Professional Chartered Accountant providing comprehensive financial services with integrity and expertise.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition duration-300">Accounting & Bookkeeping</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Tax Planning & Filing</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Financial Advisory</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-300">Audit & Assurance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition duration-300">Our Services</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Credentials</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>• Chartered Accountant (CA)</li>
+                        <li>• Registered Tax Practitioner</li>
+                        <li>• Member of ICAI</li>
+                        <li>• Licensed Financial Advisor</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2024 D N Panchasara. All rights reserved. | Professional Chartered Accountant Services
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // Mobile menu toggle
+        (function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        })();
+
+        // Smooth scrolling for navigation links
+        (function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Close mobile menu if open
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        })();
+
+        // Form submission handler
+        (function() {
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement form validation and submission logic
+                    alert('Thank you for your message! We will get back to you soon.');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

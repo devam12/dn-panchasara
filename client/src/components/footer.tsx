@@ -45,13 +45,28 @@ export default function Footer() {
               Professional Chartered Accountant providing comprehensive financial services with integrity and expertise.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-600 transition duration-300 bg-gray-800 p-2 rounded-lg">
+              <a 
+                href="https://www.linkedin.com/in/darshan-panchasara5" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-blue-600 transition duration-300 bg-gray-800 p-2 rounded-lg"
+              >
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-600 transition duration-300 bg-gray-800 p-2 rounded-lg">
+              <a 
+                href="https://twitter.com/your-twitter-handle" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-blue-600 transition duration-300 bg-gray-800 p-2 rounded-lg"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-600 transition duration-300 bg-gray-800 p-2 rounded-lg">
+              <a 
+                href="https://www.facebook.com/darshan.devam" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-blue-600 transition duration-300 bg-gray-800 p-2 rounded-lg"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
             </div>
